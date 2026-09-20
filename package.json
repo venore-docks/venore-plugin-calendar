@@ -1,6 +1,6 @@
 {
   "name": "@venore/plugin-calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calendario multi-institucional (varios calendarios nomeados, ex.: Fidelis, Erasto, FEM) com eventos e bloco de pagina (plugin do Venore Docks).",
   "private": true,
   "type": "module",

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Input } from "@venore/plugin-sdk/ui";
 import { Textarea } from "@venore/plugin-sdk/ui";
-import { Checkbox } from "@venore/plugin-sdk/ui";
+import { Switch } from "@venore/plugin-sdk/ui";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@venore/plugin-sdk/ui";
 import type { CalendarRecord } from "../../index";
 
@@ -62,10 +62,10 @@ export function EventFields({
       </label>
 
       <label className="flex items-center gap-2 text-sm text-muted-foreground">
-        <Checkbox
+        <Switch
           name="allDayCheckbox"
           checked={allDay}
-          onCheckedChange={(checked) => setAllDay(checked === true)}
+          onCheckedChange={(checked: boolean) => setAllDay(checked)}
         />
         Dia inteiro (sem horário)
         <input type="hidden" name="allDay" value={allDay ? "true" : "false"} />

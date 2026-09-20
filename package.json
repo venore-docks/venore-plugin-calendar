@@ -1,0 +1,23 @@
+{
+  "name": "@venore/plugin-calendar",
+  "version": "1.0.0",
+  "description": "Calendario multi-institucional (varios calendarios nomeados, ex.: Fidelis, Erasto, FEM) com eventos e bloco de pagina (plugin do Venore Docks).",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./manifest": "./manifest.ts",
+    "./route-table": "./routes/route-table.ts",
+    "./contributions": "./contributions.ts",
+    "./migrations/*": "./migrations/*",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "drizzle-orm": ">=0.45",
+    "next": ">=16",
+    "react": ">=19"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10"
+  }
+}
